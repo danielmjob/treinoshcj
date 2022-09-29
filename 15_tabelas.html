@@ -5,29 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABLE</title>
+  
     <style>
         table{
-            border: 1px solid black;
+            border-collapse: collapse; /* tipo de separação de dados - por padrão vem separate */
+            text-align: center;
+            width: 80%;
+            margin: auto;
         }
+        th{ 
+            padding: 20px;
+            border: 2px solid black; /* pra colocar linhas e bordas no cabeçalho */
+        }
+        td{
+            border: 1px solid black; /* pra colocar bordas em toda a tabela */
+            padding: 10px;
+        }
+        
     </style>
 </head>
 <body>
-    
+<!-- exemplo pra consulta de duvidas
+    <table>
+        <thead>
+            <tr>
+                <td colspan="5">Título</td>  mesclando colunas
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1A</td><td>2A</td><td>3A</td><td>4A</td><td>5A</td>  mesclando linhas
+            </tr>
+            <tr>
+                <td>2B</td><td>3B</td><td>4B</td><td>5B</td> diminui uma coluna nessa pois no comando anterior mesclei as linhas
+            </tr>
+            <tr>
+                <td>1C</td><td>2C</td><td>3C</td><td>4C</td><td>5C</td>
+            </tr>
+        </tbody>
+    </table>
+    -->
+
+    <h1>Table de preços</h1>
+
+    <table>
+        <caption>Tabela de preço de cursos</caption>
+        <thead>
+            <tr>
+                <th>Área</th><th>Curso</th><th>Investimento</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+        </tfoot>
+        <tr>
+            <td rowspan="3" >Design</td>
+            <td>inDesign</td>
+            <td>R$ 1.000,00</td>
+        </tr>
+        <tr>
+            <td>Photoshop</td>
+            <td>R$ 1.000,00</td>
+        </tr>
+        <tr>
+            <td>Ilustrator</td>
+            <td>R$ 1.000,00</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Development</td>
+            <td>HTML</td>
+            <td>R$ 1.000,00</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>R$ 1.000,00</td>
+        </tr>
+        <tr>
+            <td>Javascript</td>
+            <td>R$ 1.000,00</td>
+        </tr>
+        <tr>
+            <td>PHP</td>
+            <td>R$ 1.000,00</td>
+        </tr>
+
+    </table>
+
+
 </body>
 
-<table>
-    <tr>
-        <td>1B</td>
-    </tr>
-    <tr>
-        <td>1A</td><td>2A</td><td>3A</td><td>4A</td><td>5A</td>
-    </tr>
-    <tr>
-        <td>1B</td><td>2B</td><td>3B</td><td>4B</td><td>5B</td>
-    </tr>
-    <tr>
-        <td>1C</td><td>2C</td><td>3C</td><td>4C</td><td>5C</td>
-    </tr>
 
-</table>
 </html>
+
+
+

@@ -25,20 +25,27 @@
     </style>
 </head>
 <body>
+<!-- exemplo pra consulta de duvidas
+    <table>
+        <thead>
+            <tr>
+                <td colspan="5">Título</td>  mesclando colunas
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1A</td><td>2A</td><td>3A</td><td>4A</td><td>5A</td>  mesclando linhas
+            </tr>
+            <tr>
+                <td>2B</td><td>3B</td><td>4B</td><td>5B</td> diminui uma coluna nessa pois no comando anterior mesclei as linhas
+            </tr>
+            <tr>
+                <td>1C</td><td>2C</td><td>3C</td><td>4C</td><td>5C</td>
+            </tr>
+        </tbody>
+    </table>
+    -->
 
-<!--
-    Colinha...
-	<Table> tabela
-	<capition> titulo da tabela
-	<thead> cabeçalho da tabela
-	<tfoot> rodapé da tabela vem logo após o <thead> e antes do <tbody>
-	<tbody> corpo da tabela
-	<tr> - linha
-	<td> coluna/dado
-	<th> titulos da tabela
-	colspan="n" mesclar colunas/dados
-	rowspan="n" mesclar linhas
--->
     <h1>Table de preços</h1>
 
     <table>
@@ -84,27 +91,36 @@
 
     </table>
 
-<!-- exemplo pra consulta de duvidas
+    <hr>
+
     <table>
+        <caption> titulo da tabela</caption>
+
         <thead>
-            <tr>
-                <td colspan="5">Título</td>  mesclando colunas
-            </tr>
+            <th>x</th><th>Coluna A</th><th>Coluna B</th><th>Coluna C</th><th>Coluna D</th>
         </thead>
+
+        <tfoot>
+            <td colspan="5">Rodapé</td>
+        </tfoot>
+
         <tbody>
             <tr>
-                <td rowspan="2">1A</td><td>2A</td><td>3A</td><td>4A</td><td>5A</td>  mesclando linhas
+                <td>Linha 01</td><td>A1</td><td>B1</td><td>C1</td><td>D1</td>
             </tr>
             <tr>
-                <td>2B</td><td>3B</td><td>4B</td><td>5B</td> diminui uma coluna nessa pois no comando anterior mesclei as linhas
+                <td>Linha 02</td><td>A2</td><td>B2</td><td>C2</td><td>D2</td>
             </tr>
             <tr>
-                <td>1C</td><td>2C</td><td>3C</td><td>4C</td><td>5C</td>
+                <td>Linha 03</td><td rowspan="2">A3/4</td><td>B3</td><td>C3</td><td>D3</td>
+            </tr>
+            <tr>
+                <td>Linha 04</td><td>B3</td><td>C3</td><td>D3</td>
+            </tr>
+            <tr>
+                <td>Linha 05</td><td>A5</td><td colspan="2">B/C5</td><td>D5</td>
             </tr>
         </tbody>
-    </table>
-    -->
-
 
 
 </body>

@@ -1,0 +1,31 @@
+// Macetes do GIT e Github //
+
+git config --global user.email "danielmarquesjob@gmail.com" | Para configurar o email
+git config --global user.name "danieljob" | Para configurar o user name
+
+Criar o repositorio no gitHub
+Clona o http
+Abre a pasta onde vai ficar
+Abre o Git bash here
+Comando Git clone endereço da pasta
+Git status verifica
+
+Git add . |prepara os arquivos
+git commit -m "mensagem" |envia os arquivos
+git push origin main |envia/sincroniza com a nuvem
+
+git pull origin main |pega os arquivos da nuvem e substitui no pc local
+
+
+Trabalhando com Branch (ramos) do projeto
+
+git branch MinhaNovaBrach |Criar uma branch
+git checkout MinhaNovaBrach | acessar a branch
+
+
+Unindo as branchs entre na branch que quer mesclar.
+Ex.: git checkout main 
+e digite o comando a baixo
+git merge MinhaNovaBrach | para unir a branch "MinhaNovaBrach" com a "main"
+
+

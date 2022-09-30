@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!--informa o user agent a versão do html que será renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Página de texto estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel Marques dos Santos">
+        <meta name="description" content="Curso Web Design Completo: HTML5, CSS3 e JS + 5 Projetos">
+        <meta name="Keywords" content="html5, tecnologia, curso, css"> 
+    </head>
+
+    <body>
+        <h1>404 not-found</h1>
+        
+        <form action="#" method="post" class="formLogin">
+            
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                
+                <label>Email</label>
+                <input type="email" required placeholder="seuemail@email.com.br">
+                <br>
+
+                <label>Número de Filhos</label>
+                <input type="number" min="0">
+                <br>
+
+                <label>Data de Nascimento</label>
+                <input type="date" min="1850-01-30">
+                <br>
+
+                <p>Sexo</p> <!--Radio deve usar o mesmo NAME-->
+                <label>
+                    Masculino
+                    <input type="radio" name="sexo" value="M">
+                </label>
+                <label>
+                    Feminino
+                    <input type="radio" name="sexo" value="F">
+                </label>
+                <br>
+                <label>Estado</label>
+                <select name="estado">
+                    <option value="0">Selecione</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de Interesse</legend>
+
+                <label>
+                    <input type="checkbox" name="html" value="html">
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="css" value="css">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="Javascript" value="Javascript">
+                    Javascript
+                </label>
+                <br>
+    
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea name="msg" cols="30" rows="10" maxlength="100" style="resize:none;"></textarea>
+                <textarea name="msg" cols="30" rows="10" readonly disabled style="resize:none;">Termos do contrato...</textarea>
+                <label>
+                    <input type="checkbox" name="contrato" value="">Li e aceito
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Outros Inputs</legend>
+                <input type="range" min="0" max="10" step="2">
+                <input type="time">
+                <input type="color">
+
+                <select multiple size="4">
+                    <option> Opção 1</option>
+                    <option> Opção 2</option>
+                    <option> Opção 3</option>
+                    <option> Opção 4</option>
+                </select>
+
+
+            </fieldset>
+
+            <input type="hidden" name="expira" value="2022-30-09"> <!-- envuia um dado oculto dado que não interessa ao usuário exemplo data de expiração do formulário -->
+
+            <input type="submit" value="Submit"><!--Eniva o formulário-->
+            <input type="button" value="Button"><!-- Fará umaação definida-->
+            <input type="reset" value="reset"> <!-- reseta as informações -->            
+
+
+        </form>
+    </body>
+            
+</html>

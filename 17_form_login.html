@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!--informa o user agent a versão do html que será renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Página de texto estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel Marques dos Santos">
+        <meta name="description" content="Curso Web Design Completo: HTML5, CSS3 e JS + 5 Projetos">
+        <meta name="Keywords" content="html5, tecnologia, curso, css"> 
+    </head>
+
+    <style>
+
+        h1{
+            text-align: center;
+        }
+        .formLogin{
+            width: 250px;
+            margin: 50px auto;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .formLogin fieldset{
+            background: #ccc;
+        }
+        .formLogin legend{
+            background: rgb(0, 0, 0);
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+        .formLogin label{
+            margin-top: 20px;
+            display: block;
+        }
+        #user, #pass, .btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        #user, #pass{
+            background: rgb(240, 230, 230);
+        }
+
+        #user:focus, #pass:focus{
+            background: rgb(255, 255, 255);
+        }
+
+        .btn{
+            margin-top:15px;
+            
+            background: rgb(255, 0, 0);
+            color: white;
+        }
+        .btn:hover{
+            margin-top:15px;
+            background: rgb(131, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+        .btn:active{
+            margin-top:15px;
+            background: rgb(27, 1, 1);
+            color: rgb(88, 88, 88);
+            
+        }
+
+        #user{
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <body>
+        <h1>Exemplo formulário</h1>
+        
+        <form action="#" method="post" class="formLogin">
+            
+            <fieldset>
+                <legend>Login</legend>
+                <label for="user">Digite o seu usuário: </label>
+                <input type="text" name="user" id="user" autofocus>
+                <label for="pass">Digite a senha: </label>
+                <input type="password" name="pass" id="pass">
+                <input type="submit" value="Logar" class="btn">
+            </fieldset>
+        </form>
+    </body>
+            
+</html>

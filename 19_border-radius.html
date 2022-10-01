@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!--informa o user agent a versão do html que será renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>border-radius-coxinha</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel Marques dos Santos">
+        <meta name="description" content="Curso Web Design Completo: HTML5, CSS3 e JS + 5 Projetos">
+        <meta name="Keywords" content="html5, tecnologia, curso, css"> 
+        
+        <style>
+
+
+            /*fiz meus proprios teste não fiquei preso ao professor, 
+                aproveitei para usar position*/
+            #principal{
+                position: relative;
+                width: 300px;
+                height: 300px;
+                margin: auto;
+
+            }
+            #radius{
+                width: 200px;
+                height: 200px;
+                background: orange;
+                margin: 50px auto;
+                border-radius: 5%  50% 50% 50%;
+                transform: rotate(45deg);
+                position: absolute;
+                left: 17%;
+                top: 9%;
+            }
+
+            #olhoesquerdo{
+                width: 30px;
+                height: 50px;
+                background: rgb(255, 255, 255);
+                border-radius: 50%;
+                position: absolute;
+                top:35%;
+                left:35%;
+            }
+
+            #bolinha-esquerdo{
+                width: 20px;
+                height: 30px;
+                background: rgb(0, 0, 0);
+                border-radius: 50%;
+                position: absolute;
+                top:35%;
+                left:20%;
+            }
+
+            #olhodireito{
+                width: 30px;
+                height: 50px;
+                background: rgb(255, 255, 255);
+                border-radius: 50%;
+                position: absolute;
+                top:35%;
+                right:35%;
+            }
+
+            #bolinha-direto{
+                width: 20px;
+                height: 30px;
+                background: rgb(0, 0, 0);
+                border-radius: 50%;
+                position: absolute;
+                top:35%;
+                right:20%;
+            }
+
+            #boca{
+                width: 100px;
+                height: 50px;
+                background: rgb(255, 255, 255);
+                position: absolute;
+                top: 60%;
+                left: 34%;
+                border-radius: 5% 5% 50% 50% / 30px;
+            }
+            #boca-linha{
+                width: 100px;
+                height: 50px;
+                border-bottom: 4px dotted rgba(87, 87, 87, 0.582);
+                position: absolute;
+                top: 49%;
+                left: 34%;
+                border-radius: 0% 0% 15% 15%; 
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>CSS efeitos</h1>
+        <p></p>
+
+        <div id="principal">
+            <div id="radius"></div>
+            <div id="olhoesquerdo">
+                <div id="bolinha-esquerdo"></div>
+            </div>
+            <div id="olhodireito">
+                <div id="bolinha-direto"></div>
+            </div>
+            <div id="boca"></div>
+            <div id="boca-linha"></div>
+        </div>
+     
+
+    </body>
+            
+</html>

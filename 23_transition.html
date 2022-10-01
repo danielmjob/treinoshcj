@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!--informa o user agent a versão do html que será renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Página de texto estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel Marques dos Santos">
+        <meta name="description" content="Curso Web Design Completo: HTML5, CSS3 e JS + 5 Projetos">
+        <meta name="Keywords" content="html5, tecnologia, curso, css"> 
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+
+                /*transition ponto inicial ponto final e evento*/
+                transition-property: width, height;
+                transition-duration: 1s, 3s;
+                transition-timing-function: ease-in-out, linear; /* controle de aceleração */
+                transition-delay: 0, .8s;
+
+            }
+
+            div:hover{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Estrutura base</h1>
+        <div>1</div>
+    </body>
+            
+</html>

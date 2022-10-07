@@ -24,7 +24,7 @@
 
     <body>
         <header class="main-header">
-            <a href="./index.html" class="main-header-link"><img src="./images/avatar.jpg" alt="foto de perfil"></a>
+            <a href="./index.html" class="main-header-link imagem-link"><img src="./images/avatar.jpg" alt="foto de perfil"></a>
             <h1 class="main-header-title">Trabalhos e groselhas de <br>
                 <strong>Tapias Morales</strong>, <br>
                 um zé ninguém qualquel <br>
@@ -46,83 +46,120 @@
 
                     <a href="#" title="Veja mais" class="button-default">Veja Mais</a>
             </section>
+
             <section class="main-content-section">
                 <h3>Recent Works</h3>
-                <article class="recent-works-card">
-                    <a href="./images/fulls/01.jpg">
-                        <img src="./images/thumbs/01.jpg" alt="Descrição da imagem">
-                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </a>
-                </article>
-                <article class="recent-works-card">
-                    <a href="./images/fulls/02.jpg">
-                        <img src="./images/thumbs/02.jpg" alt="Descrição da imagem">
-                        <p class="recent-works-card-title">Ultricies lacinia interdum</p>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </a>
-                </article>
-                <article class="recent-works-card">
-                    <a href="./images/fulls/03.jpg">
-                        <img src="./images/thumbs/03.jpg" alt="Descrição da imagem">
-                        <p class="recent-works-card-title">Tortor metus commodo</p>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </a>
-                </article>
-                <article class="recent-works-card">
-                    <a href="./images/fulls/04.jpg">
-                        <img src="./images/thumbs/04.jpg" alt="Descrição da imagem">
-                        <p class="recent-works-card-title">Quam neque phasellus</p>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </a>
-                </article>
-                <article class="recent-works-card">
-                    <a href="./images/fulls/05.jpg">
-                        <img src="./images/thumbs/05.jpg" alt="Descrição da imagem">
-                        <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </a>
-                </article>
-                <article class="recent-works-card">
-                    <a href="./images/fulls/06.jpg">
-                        <img src="./images/thumbs/06.jpg" alt="Descrição da imagem">
-                        <p class="recent-works-card-title">Risus ornare lacinia</p>
-                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                    </a>
-                </article>
+
+                <div class="row">
+                    <div class="col-2">
+
+                        <article class="recent-works-card">
+                            <a href="./images/fulls/01.jpg" class="imagem-link">
+                                <img src="./images/thumbs/01.jpg" alt="Descrição da imagem">
+                                <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </a>
+                        </article>
+                        <article class="recent-works-card">
+                            <a href="./images/fulls/02.jpg"class="imagem-link">
+                                <img src="./images/thumbs/02.jpg" alt="Descrição da imagem">
+                                <p class="recent-works-card-title">Ultricies lacinia interdum</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </a>
+                        </article>
+                        <article class="recent-works-card">
+                            <a href="./images/fulls/03.jpg"class="imagem-link">
+                                <img src="./images/thumbs/03.jpg" alt="Descrição da imagem">
+                                <p class="recent-works-card-title">Tortor metus commodo</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </a>
+                        </article>
+                    </div>    
+                    <div class="col-2">
+                        <article class="recent-works-card">
+                            <a href="./images/fulls/04.jpg"class="imagem-link">
+                                <img src="./images/thumbs/04.jpg" alt="Descrição da imagem">
+                                <p class="recent-works-card-title">Quam neque phasellus</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </a>
+                        </article>
+                        <article class="recent-works-card">
+                            <a href="./images/fulls/05.jpg"class="imagem-link">
+                                <img src="./images/thumbs/05.jpg" alt="Descrição da imagem">
+                                <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </a>
+                        </article>
+                        <article class="recent-works-card">
+                            <a href="./images/fulls/06.jpg"class="imagem-link">
+                                <img src="./images/thumbs/06.jpg" alt="Descrição da imagem">
+                                <p class="recent-works-card-title">Risus ornare lacinia</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </a>
+                        </article>
+                    </div> <!-- ROW -->
+
                 <a href="#" title="Veja Portfólio Completo" class="button-default">Veja Portfólio Completo</a>
             </section>
             <section class="main-content-section">
+
+
+                <!-- atenção nessa parte -- GRID -->
+
                 <h3>Get In Touch</h3>
-                <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-                
-                <forms action="#" method="POST">
-                
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. 
+                    Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                <div class="row">
+                    <div class="col-2-3">
 
-                    <label for="mensagem">Digite sua Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
-                    
-                    <input type="submit" value="Enviar">
-                </forms>
-                <address>
-                    <p>
-                    <span>Endereço: </span>
-                    1234 Somewhere Rd. Nashville, TN 00000 United States
-                    </p>
-                    <p>
-                        <span>Telefone: </span>
-                        000-000-000
-                    </p>
-                    <p>
-                        <span>E-mail: </span>
-                        email@server.com
-                    </p>     
-                </address>
+                        <forms action="#" method="POST">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" name="nome" id="nome">
+                                </div>
+
+                                <div class="col-2">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+
+                            </div>
+
+                            
+                                <label for="mensagem">Digite sua Mensagem</label>
+                                <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                                <input type="submit" value="Enviar" class=" button-default button-default-stroke button-default">
+                        
+                        </forms>
+                    </div>
+
+                    <div class="col-1-3">
+                        <address>
+                            <p>
+                            <span>Endereço: </span>
+                            1234 Somewhere Rd. Nashville, TN 00000 United States
+                            </p>
+                            <p>
+                                <span>Telefone: </span>
+                                000-000-000
+                            </p>
+                            <p>
+                                <span>E-mail: </span>
+                                email@server.com
+                            </p>     
+                        </address>
+
+                    </div>
+
+                </div>
+
+
+                
+                
+    
+               
             </section>
             <section class="main-content-section">
                 <h3>Elements</h3>
@@ -355,17 +392,12 @@
                         <label for="msg">Mensagem</label>
                         <textarea placeholder="Digite a mensagem" id="msg"></textarea>
 
-                        <input type="submit" value="Enviar" class="button-default">
-                        <input type="reset" value="Limpar" class="button-default -stroke">
+                        <input type="submit" value="Enviar" class="button-default button-default-big">
+                        <input type="reset" value="Limpar" class="button-default button-default-stroke button-default-big">
                     </form>
 
             </section>
             
-            
-            <section class="main-content-section">
-
-
-            </section>
         </main>
         <footer class="main-footer">
             <h3>Imagens</h3>
